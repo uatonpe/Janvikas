@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donation Receipt Generator</title>
+    <title>Janvikas Sanstha Donation Collection App</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
     <style>
         body {
@@ -236,7 +236,7 @@ function generateReceipt() {
     const maxWidth = 150;
     let startY = 80;
 
-    pdf.text(`Date of Receipt: ${formattedDate}`, 30, startY);
+    pdf.text(`Date of Receipt: ${formattedDate}`, 10, startY);
     startY += 10;
 
     pdf.text(`Donor Name: ${donorName}`, 30, startY, { maxWidth });
